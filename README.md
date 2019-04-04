@@ -1,6 +1,8 @@
 # Sistema de Gestão da Produção - Prática
 <b>Prática</b> foi um Sistema desenvolvido para controle da produtividade de equipamentos de uma empresa no ramo têxtil.<br />
-Este projeto foi desenvolvido full stack, com embasamento nos indicadores de produtividade do TPM, envolvendo as seguinte etapas:<br />
+Este projeto foi desenvolvido full stack, com embasamento nos indicadores de produtividade do TPM, envolvendo as seguinte etapas:<br /><br />
+A apresentação deste projeto pode ser acessada em: https://diegodlima.github.io/Sistema_de_Gestao_da_Producao/
+<br />
 1 - Análise de requisitos<br />
 2 - Pesquisa de conceitos aplicáveis ao problema<br />
 3 - Adaptação dos conceitos ao requisitos e regras de negócio<br />
