@@ -2,16 +2,44 @@
 <html>
 <head>
 	<title>Gestão da Produção Prática</title>
+	<style type="text/css">
+		body{
+			display: grid;
+			grid-template-areas: 
+				"header header header"
+				"aside main main"
+				"footer footer footer";
+			grid-gap: 1rem;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto 70vh auto;
+		}
+		.o-header{
+			grid-area: header;
+		}
+		.o-aside{
+			grid-area: aside;
+		}
+		.o-main{
+			grid-area: main;
+		}
+		.o-footer{
+			grid-area: footer;
+		}
+	</style>
 </head>
-<body>
-<header>
-	<font face="arial">
-		<h1>Sistema de Gestão da Produção - Prática</h1>
-		<h3><b>Autor:</b> Diego de Lima</h3>
-	</font>
+<body bgcolor="#5A6268">
+<header class="o-header">
+	<img src="media/logo.png" />
+
 </header>
+
+<aside class="o-aside">
+		<font face="Arial" color="#BBC3C5">Manual</font>
+		<iframe src="Apresentação do Sistema de Gestão da Produção Prática.pdf" width="100%" height="100%" style="border: none;"></iframe>
+</aside>
+<main class="o-main">
+	<font face="Arial" color="#BBC3C5">Videos</font><br />
+	<iframe width="545" height="300" src="https://www.youtube.com/embed/NeDG5jSeX7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</main>
 </body>
-<content>
-	<iframe src="Apresentação do Sistema de Gestão da Produção Prática.pdf" width="100%" height="800" style="border: none;"></iframe>
-</content>
 </html>
