@@ -7,7 +7,7 @@ A apresentação deste projeto pode ser acessada em: https://diegodlima.github.i
 2 - Pesquisa de conceitos aplicáveis ao problema<br />
 3 - Adaptação dos conceitos ao requisitos e regras de negócio<br />
 4 - Desenvolvimento do Banco de Dados<br />
-5 - Desenvolvimento das front-end e back-end<br />
+5 - Desenvolvimento front-end e back-end<br />
 6 - Testes, validações e correções<br />
 7 - Treinamento de usuários<br />
 8 - Apresentação do Sistema para Diretores, Gerentes e Supervisores<br />
