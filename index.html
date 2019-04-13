@@ -1,49 +1,176 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Gestão da Produção Prática</title>
-	<style type="text/css">
-		body{
-			display: grid;
-			grid-template-areas: 
-				"header header header"
-				"aside main main"
-				"footer footer footer";
-			grid-gap: 1rem;
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto 70vh auto;
-		}
-		.o-header{
-			grid-area: header;
-		}
-		.o-aside{
-			grid-area: aside;
-		}
-		.o-main{
-			grid-area: main;
-		}
-		.o-footer{
-			grid-area: footer;
-		}
-	</style>
-</head>
-<body bgcolor="#5A6268">
-<header class="o-header">
-	<img src="media/logo.png" />
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<aside class="o-aside">
-		<font face="Arial" color="#BBC3C5">Manual</font>
-		<iframe src="Apresentação do Sistema de Gestão da Produção Prática.pdf" width="100%" height="100%" style="border: none;"></iframe>
-</aside>
-<main class="o-main">
-	<font face="Arial" color="#BBC3C5">Videos</font><br />
-	<iframe width="530" height="285" src="https://www.youtube.com/embed/NeDG5jSeX7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	&nbsp;&nbsp;
-	<iframe width="530" height="285" src="https://www.youtube.com/embed/bsOOwEtX_HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<br />
-	<iframe width="530" height="285" src="https://www.youtube.com/embed/OPz0MjLLTg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</main>
-</body>
+    <title>Sistema de Gestão Prática</title>
+
+    <style type="text/css">
+    	.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px; height: 0; overflow: hidden;
+			}
+
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			}
+    </style>
+  </head>
+  <body>
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-12">
+  				<img src="media/logo.png" />
+  			</div>  				
+		</div><br />
+
+  	<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#descricao">Apresentação</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#manualusuario">Manual</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#videosapresentacao">Vídeos</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active container-fluid" id="descricao">
+  	<div class="row">
+  		<div class="col-12">
+  			<div class="jumbotron" id="apresentacao">
+				<h1 class="display-4">Apresentação</h1>
+				<h4>Desenvolvimento e Implantação de Sistema de Gestão da Produção
+			fev de 2018 – jul de 2018</h4>
+			 	<p class="lead">Sistema desenvolvido para controle da produtividade de equipamentos.<br />
+			 	  Este projeto foi desenvolvido full stack, com embasamento nos indicadores de produtividade do TPM, envolvendo as seguinte etapas:</p>
+			 	<ul>
+			 		<li>Análise de requisitos</li>
+			 	  	<li>Pesquisa de conceitos aplicáveis ao problema</li>
+			 	  	<li>Adaptação dos conceitos ao requisitos e regras de negócio</li>
+			 	  	<li>Desenvolvimento do Banco de Dados</li>
+			 	  	<li>Desenvolvimento full stack</li>
+			 	  	<li>Testes, validações e correções</li>
+			 	  	<li>Treinamento de usuários</li>
+			 	  	<li>Apresentação do Sistema para Diretores, Gerentes e Supervisores</li>
+			 	  	<li>Implantação do Sistema</li>
+			 	  	<li>Orientações e treinamento de gestores para tomadas de decisão</li>
+			 	</ul>
+			 	<p>Os conceitos e indicadores desenvolvidos foram:</p>
+			 	<ul>
+			 	  	<li>Total Productive Maintenance</li>
+			 	  	<li>OEE (Overall Equipment Effectiveness</li>
+			 	  	<li>Indicador de Utilização de Equipamento</li>
+			 	  	<li>Indicador de Disponibilidade de Equipamento</li>
+			 	  	<li>Indicador de Qualidade</li>
+			 	  	<li>MTBF (Mean Time Between Failures)</li>
+			 	  	<li>MTTR (Mean Time to Repair)</li>
+			 	</ul>
+			 	<p>Tecnologias empregadas</p>
+			 	<ul>
+			 	  	<li>Banco de dados MongoDB</li>
+			 	  	<li>JQuery, Moment.js e Chart.js</li>
+			 	  	<li>PHP, HTML e CSS</li>
+			 	  	<li>Ajax</li>
+			 	  	<li>Bootstrap</li>
+			 	</ul>
+			</div>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="tab-pane container-fluid" id="manualusuario">
+    <div class="row">
+  		<div class="col-12" id="manual">
+			<div class="jumbotron">
+				<h1 class="display-4">Manual</h1>
+				<p>
+					<iframe src="Apresentação do Sistema de Gestão da Produção Prática.pdf" width="100%" style="border: none;"></iframe>
+				</p>
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="tab-pane container-fluid" id="videosapresentacao">
+    <div class="row">
+  		<div class="col-12" id="videos">
+			<div class="jumbotron">
+				<h1 class="display-4">Vídeos</h1>
+
+					<form>
+					  <div class="form-group">
+					    <label for="selecaovideos">Seleção de Vídeos</label>
+					    <select class="form-control" id="selecaovideos">
+					      <option value='usuarios'>Gestão de Usuários</option>
+					      <option value='status'>Cadastros, registros e acompanhamento em tempo real de status</option>
+					      <option value='turnos'>Gestão de Turnos, Calendários e Horas Extras</option>
+					    </select>
+					  </div>
+					</form>
+
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/NeDG5jSeX7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>						
+					</div>
+					
+			</div>
+		</div>
+    </div>
+  </div>
+  		
+</div>
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("#manual .jumbotron").height($("#apresentacao").height());
+    		$("#manual iframe").height($("#apresentacao").height()-50);
+
+    		$("#selecaovideos").change(function(){
+    			video = $(this).val();
+    			switch(video){
+    				case "usuarios":
+    				$(".video-container iframe").removeAttr("src");
+    				$(".video-container iframe").attr("src", "https://www.youtube.com/embed/NeDG5jSeX7M");
+    				break;
+
+    				case "status":
+    				$(".video-container iframe").removeAttr("src");
+    				$(".video-container iframe").attr("src", "https://www.youtube.com/embed/bsOOwEtX_HA");
+    				break;
+
+    				case "turnos":
+    				$(".video-container iframe").removeAttr("src");
+    				$(".video-container iframe").attr("src", "https://www.youtube.com/embed/OPz0MjLLTg4");
+    				break;
+    			}
+    		});
+    	});
+    </script>
+  </body>
 </html>
